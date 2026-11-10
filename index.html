@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottle Bliss | Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Bottle<span>Bliss.</span></h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="cart-btn" onclick="showCart()">
+                🛒 Cart (<span id="cart-count">0</span>)
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Stay Hydrated,<br>Stay Beautiful!</h1>
+            <p>Discover stylish, reusable and premium water bottles.</p>
+            <a href="#products" class="shop-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Our Best Sellers</h2>
+        <p class="subtitle">Choose your favourite bottle</p>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500" alt="Steel bottle">
+                <h3>Steel Water Bottle</h3>
+                <p>Premium stainless steel bottle.</p>
+                <h4>₹499</h4>
+                <button onclick="addToCart('Steel Water Bottle', 499)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=500" alt="Reusable bottle">
+                <h3>Classic Bottle</h3>
+                <p>Simple and stylish everyday bottle.</p>
+                <h4>₹299</h4>
+                <button onclick="addToCart('Classic Bottle', 299)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523362628745-0c100150b504?w=500" alt="Travel bottle">
+                <h3>Travel Bottle</h3>
+                <p>Perfect companion for your journeys.</p>
+                <h4>₹399</h4>
+                <button onclick="addToCart('Travel Bottle', 399)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1589365278144-c9e705f843ba?w=500" alt="Premium bottle">
+                <h3>Premium Bottle</h3>
+                <p>Elegant design with premium finish.</p>
+                <h4>₹599</h4>
+                <button onclick="addToCart('Premium Bottle', 599)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Bottle Bliss</h2>
+        <p>
+            We believe staying hydrated should be stylish and easy.
+            Explore our collection of quality bottles designed for
+            everyday life, travel and fitness.
+        </p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@bottlebliss.com</p>
+        <p>Phone: +91 9876543210</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Bottle Bliss. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
